@@ -11,7 +11,7 @@ const client = new Client({
     ],
 });
 
-const userList = ['dome','stevox','schnute','julia','jason','vinc'];
+const userList = [];
 
 client.on('ready', (c) => {
     console.log(`✅ ${c.user.tag} is online.`);
@@ -40,6 +40,9 @@ client.on('interactionCreate', (interaction) => {
         //Get list of usernames of selected channel
         if(discordChannel.members.size == 0){
             return interaction.reply('There are no user!')
+        }
+        if(discordChannel.members.size < teamAmount){
+            return interaction.reply('There are not enough user to match!')
         }
 
         discordChannel.members.forEach(element => {
