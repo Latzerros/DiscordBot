@@ -21,7 +21,7 @@ const commands = [
     ]
   },
   {
-    name: 'valo agent picker',
+    name: 'valo_agent_picker',
     description: 'Build 2 Teams out of Channel Members.',
     options: [
       {
@@ -37,7 +37,7 @@ const commands = [
     ]
   },
   {
-    name: 'valo add ',
+    name: 'valo_add',
     description: 'Build 2 Teams out of Channel Members.',
     options: [
       {
