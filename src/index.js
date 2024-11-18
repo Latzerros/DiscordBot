@@ -21,11 +21,10 @@ client.on('interactionCreate', (interaction) => {
     if (!interaction.isChatInputCommand()) return;
 
     if (interaction.commandName === 'teamup') {
-
         TeamBuilder(client, interaction);
-    }
+    };
 
-    
+
 });
 
 client.login(process.env.TOKEN);
